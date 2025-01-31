@@ -49,11 +49,26 @@ Defines the structure of the product_table in the database using SQLAlchemy.
 ### Core (core/database.py)
 Defines database connectivity settings using *SQLAlchemy* and *Databases* library.
 
-### crud
-defining the crud operations, create, read, update, delete.
+### CRUD
+Implements database operations for product management (Create, Read, Update, Delete).
 
-### api
-its the routers where you uses the crud operations, and schema
+### Api
+Defines API endpoints using FastAPI's APIRouter, linking them to CRUD operations.
 
 ### The moddleware: (middlewares/cors.py)
 Configures CORS (Cross-Origin Resource Sharing) to allow frontend interactions
+
+
+### Summary
+
+This FastAPI backend follows a modular architecture:
+
+- Main: Initializes the app, middleware, and database lifecycle.
+- Schemas: Defines request/response validation.
+- Models: Defines database structure.
+- Database: Manages database connections.
+- CRUD: Implements business logic for data operations.
+- API: Exposes endpoints using FastAPI.
+- Middleware: Configures security and communication policies.
+
+This design promotes clean separation of concerns, making the API scalable and maintainable.
