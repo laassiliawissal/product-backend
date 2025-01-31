@@ -14,7 +14,7 @@ source venv/bin/activate  # Activate on macOS
 ```
 2. Install Required Dependencies
 ```bash
-pip install fastapi uvicorn sqlalchemy databases pydantic
+pip install fastapi uvicorn sqlalchemy databases pydantic aiosqlite
 ```
 
 3. Run the Application
@@ -22,6 +22,16 @@ pip install fastapi uvicorn sqlalchemy databases pydantic
 ```bash
 uvicorn main:app --reload
 ```
+4. troubleshoot:
+```bash
+    which python
+    which uvicorn
+    which pip
+```
+they should result to the same path of you curent ectivated venv.
+
+shift + cmd + P => Python: Select Interpreter
+
 ## Code anatomy:
 
 ### main.py:
@@ -72,3 +82,14 @@ This FastAPI backend follows a modular architecture:
 - Middleware: Configures security and communication policies.
 
 This design promotes clean separation of concerns, making the API scalable and maintainable.
+
+######
+
+## Environment Variables:
+```bash
+    pip install python-dotenv
+```
+- create .env file and add the "DATABASE_URL=sqlite:///./test.db"
+
+
+

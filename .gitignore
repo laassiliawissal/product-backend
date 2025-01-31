@@ -1,0 +1,26 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE or Editor-specific files
+.idea/
+.vscode/
+
+# Database files (if using SQLite or similar)
+*.sqlite3
+*.db
+
+# Environment variable files (for sensitive data like API keys)
+.env
+
+
