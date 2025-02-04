@@ -5,7 +5,7 @@ from pydantic import BaseModel
 from databases import Database
 import os
 
-# database connection
+# database connection details
 
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./product.db") 
 
